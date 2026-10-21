@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İstanbul Esenyurt Üniversitesi Öğrenci İşleri AI Agent</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="app-header">
+      <div class="header-content">
+       
+        <h1>İstanbul Esenyurt Üniversitesi Öğrenci İşleri AI Agent</h1>
+        <p>Ders kaydı, AKTS, tek ders, yaz okulu, transkript, mezuniyet ve dilekçe konularında yardımcı olur.</p>
+      </div>
+    </header>
+
+
+    <section id="chatMessages" class="chat-messages" aria-live="polite">
+      <article class="message assistant">
+        <div class="message-avatar" aria-hidden="true">AI</div>
+        <div class="bubble">
+          Merhaba, ben İstanbul Esenyurt Üniversitesi öğrenci işleri süreçleri hakkında yardımcı olan AI Agent'ım. Ders kaydı, AKTS limiti, tek ders sınavı, yaz okulu, transkript, mezuniyet, danışman onayı, dilekçe ve e-posta konularında soru sorabilirsiniz.
+        </div>
+      </article>
+    </section>
+
+    <form id="chatForm" class="composer" autocomplete="off">
+      <label class="sr-only" for="messageInput">Mesajınız</label>
+      <textarea
+        id="messageInput"
+        name="message"
+        rows="1"
+        placeholder="Sorunuzu yazın..."
+        autocomplete="off"
+      ></textarea>
+      <button id="sendButton" type="submit">Gönder</button>
+    </form>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+  <script src="/static/script.js"></script>
+</body>
+</html>
